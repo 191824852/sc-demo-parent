@@ -23,6 +23,11 @@
     <modules>
         <module>sc-demo-eureka</module>
         <module>sc-demo-gateway</module>
+        <module>sc-demo-zuul</module>
+        <module>sc-demo-api-dto</module>
+        <module>sc-demo-service-api</module>
+        <module>sc-demo-service-impl</module>
+        <module>sc-demo-portal</module>
     </modules>
 
 
@@ -86,6 +91,7 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
+                <version>2.1.8.RELEASE</version>
             </plugin>
         </plugins>
     </build>

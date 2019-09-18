@@ -8,4 +8,6 @@
     </parent>
 
     <artifactId>sc-demo-api-core-dto</artifactId>
+
+
 </project>

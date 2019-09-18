@@ -9,6 +9,7 @@
 
     <artifactId>sc-demo-api-dto</artifactId>
     <packaging>pom</packaging>
+
     <modules>
         <module>sc-demo-api-core-dto</module>
     </modules>

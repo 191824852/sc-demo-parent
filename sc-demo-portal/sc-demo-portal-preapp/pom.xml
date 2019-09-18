@@ -13,22 +13,13 @@
 
 
     <dependencies>
-
         <dependency>
             <groupId>com.zjp.sc-demo</groupId>
             <artifactId>sc-demo-service-api-core</artifactId>
             <version>1.0.0</version>
-            <scope>compile</scope>
         </dependency>
     </dependencies>
 
-    <build>
-        <plugins>
-            <plugin>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-maven-plugin</artifactId>
-            </plugin>
-        </plugins>
-    </build>
+
 
 </project>
