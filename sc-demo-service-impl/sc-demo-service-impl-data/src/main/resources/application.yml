@@ -1,0 +1,11 @@
+server:
+  port: 63003
+  servlet:
+    context-path: /data
+spring:
+  application:
+    name: data
+eureka:
+  client:
+    register-with-eureka: false
+    fetch-registry: false
