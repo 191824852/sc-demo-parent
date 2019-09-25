@@ -12,9 +12,9 @@ import org.springframework.cloud.openfeign.EnableFeignClients;
 @SpringBootApplication
 @EnableFeignClients
 @EnableDiscoveryClient
-public class DataApplication {
+public class ServiceDataApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(DataApplication.class,args);
+        SpringApplication.run(ServiceDataApplication.class,args);
     }
 }

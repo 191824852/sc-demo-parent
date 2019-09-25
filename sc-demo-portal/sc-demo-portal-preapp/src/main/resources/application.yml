@@ -6,13 +6,10 @@ eureka:
   client:
     serviceUrl:
       defaultZone: http://localhost:65201/eureka/
-    fetch-registry: false
-    register-with-eureka: false
-
+    fetch-registry: true
+    register-with-eureka: true
 server:
-  servlet:
-    context-path: /preApp
   port: 63001
 spring:
   application:
-    name: preApp
+    name: preapp-portal

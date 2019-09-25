@@ -1,0 +1,30 @@
+server:
+  port: 65401
+  servlet:
+    context-path: /scDemo
+spring:
+  application:
+    name: gateway-service
+eureka:
+  instance:
+    lease-renewal-interval-in-seconds: 5
+    lease-expiration-duration-in-seconds: 2
+    prefer-ip-address: true
+  client:
+    serviceUrl:
+      defaultZone: http://127.0.0.1:65201/eureka/
+zuul:
+  routes:
+    preapp-portal:
+      path: /preapp/**
+      serviceId: preapp-portal
+    core-service:
+      path: /core/**
+      serviceId: CORE-SERVICE
+    data-service:
+      path: /data/**
+      serviceId: data-service
+  host:
+    connection-request-timeout-millis: 300000
+    socket-timeout-millis: 300000
+    connect-timeout-millis: 300000

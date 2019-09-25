@@ -11,7 +11,6 @@
     <name>${project.artifactId}</name>
     <description>The parent project of Sc-demo</description>
 
-
     <properties>
         <!-- Compile libs -->
         <fastjson.version>1.2.60</fastjson.version>
@@ -19,6 +18,16 @@
         <spring-boot.version>2.1.8.RELEASE</spring-boot.version>
         <lombok.version>1.18.8</lombok.version>
     </properties>
+
+
+    <parent>
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starters</artifactId>
+        <version>2.1.8.RELEASE</version>
+    </parent>
+
+
+
 
     <modules>
         <module>sc-demo-eureka</module>
@@ -35,14 +44,6 @@
     <!--管理整个项目依赖-->
     <dependencyManagement>
         <dependencies>
-            <!--spring boot start-->
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-starter</artifactId>
-                <version>${spring-boot.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
             <!--spring cloud -->
             <dependency>
                 <groupId>org.springframework.cloud</groupId>
@@ -91,7 +92,6 @@
             <plugin>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-maven-plugin</artifactId>
-                <version>2.1.8.RELEASE</version>
             </plugin>
         </plugins>
     </build>

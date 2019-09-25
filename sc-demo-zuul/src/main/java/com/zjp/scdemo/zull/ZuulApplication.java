@@ -2,15 +2,16 @@ package com.zjp.scdemo.zull;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
+import org.springframework.cloud.netflix.eureka.EnableEurekaClient;
 import org.springframework.cloud.netflix.zuul.EnableZuulProxy;
 
 @SpringBootApplication
 @EnableZuulProxy
-//@EnableDiscoveryClient
-public class ScDemoZuulApplication {
+@EnableEurekaClient
+public class ZuulApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(ScDemoZuulApplication.class, args);
+        SpringApplication.run(ZuulApplication.class, args);
     }
 
 }
